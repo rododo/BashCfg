@@ -39,4 +39,26 @@ prompt
 
 export LANG=en_US.UTF-8
 
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=100000
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+alias hls='hadoop fs -ls'
+alias hcp='hadoop fs -cp'
+alias hdf='hadoop fs -df'
+alias hcat='hadoop fs -cat'
+alias hrmr='hadoop fs -rm -r'
+alias hrmrs='hdfs dfs -rm -r -skipTrash'
+alias hmv='hadoop fs -mv'
+alias hdu='hadoop fs -du -h'
+alias htext='hadoop fs -text'
+alias hmkdir='hadoop fs -mkdir'
+alias hkill='hadoop job -kill'
+alias hmk='hdfs dfs -mkdir -p'
+alias hput='hdfs dfs -put'
+alias hget='hdfs dfs -get'
 # export PS1='\u@\H:\w$ '
